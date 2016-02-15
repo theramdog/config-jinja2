@@ -29,11 +29,11 @@ interface Loopback0
 ip route 0.0.0.0 0.0.0.0 {{ management_gw }}
 {# VLANS #}
 vlan {{ vlan.id.data}}
- name {{ vlan.name.data }}
+name {{ vlan.name.data }}
 vlan {{ vlan.id.voice }}
- name {{ vlan.name.voice }}
+name {{ vlan.name.voice }}
 vlan {{ vlan.id.wireless }}
- name {{ vlan.name.wireless }}
+name {{ vlan.name.wireless }}
 
 {# Enduser_switch_interface #}
 interface GigabitEthernet0/1-40
@@ -45,7 +45,7 @@ interface GigabitEthernet0/1-40
  {# Wireless_Switch_Interface #}
 interface GigabitEthernet0/41-48
  switchport mode trunk
- switchport trunk native vlan {{vlan.id.wireless}}
+ switchport trunk native vlan {{ vlan.id.wireless }}
  spanning-tree portfast trunk
  auto qos trust dscp
 
@@ -73,12 +73,6 @@ spanning-tree loopguard default
 spanning-tree logging
 spanning-tree pathcost method long
 
-!
-archive
- path flash:$h$t
- write-memory
- log config
-  logging enable
 !
 no ip http server
 no ip http secure-server
