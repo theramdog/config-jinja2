@@ -28,24 +28,24 @@ interface Loopback0
 !
 ip route 0.0.0.0 0.0.0.0 {{ management_gw }}
 {# VLANS #}
-vlan {{ vlan.id.data}}
-name {{ vlan.name.data }}
-vlan {{ vlan.id.voice }}
-name {{ vlan.name.voice }}
-vlan {{ vlan.id.wireless }}
-name {{ vlan.name.wireless }}
+vlan {{ vlanIdData }}
+name {{ vlanNameData }}
+vlan {{ vlanIdVoice }}
+name {{ vlanNameVoice }}
+vlan {{ vlanIdWireless }}
+name {{ vlanNameWireless }}
 
 {# Enduser_switch_interface #}
 interface GigabitEthernet0/1-40
- switchport voice vlan {{ vlan.id.voice }}
- switchport vlan {{ vlan.id.data }}
+switchport vlan {{ vlanIdData }}
+switchport voice vlan {{ vlanIdVoice }}
  spanning-tree portfast
  auto qos voip cisco-phone
 
  {# Wireless_Switch_Interface #}
 interface GigabitEthernet0/41-48
  switchport mode trunk
- switchport trunk native vlan {{ vlan.id.wireless }}
+ switchport trunk native vlan {{ vlanIdWireless }}
  spanning-tree portfast trunk
  auto qos trust dscp
 

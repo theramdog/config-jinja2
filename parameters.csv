@@ -1,7 +1,10 @@
-hostname;domain_name;dns_server;ntp_server;admin_user;admin_password;enable;snmp_ro;snmp_rw;tty_password;management_ip;management_gw;vlan.id.data;vlan.name.data;vlan.id.voice;vlan.name.voice;vlan.id.wireless;vlan.name.wireless
-switch-a;domain.local;8.8.8.8;100.100.1.1;sentinel;s3nt1n3l;s3nt1n3l;public;private;telnetpass;10.0.0.2;10.0.01;10;data;20;voice;100;wifi
-Switch-b;domain.local;8.8.8.8;100.100.1.1;sentinel;s3nt1n3l;s3nt1n3l;public;private;telnetpass;10.0.0.3;10.0.01;10;data;20;voice;100;wifi
-Switch-c;domain.local;8.8.8.8;100.100.1.1;sentinel;s3nt1n3l;s3nt1n3l;public;private;telnetpass;10.0.0.4;10.0.01;10;data;20;voice;100;wifi
-Switch-d;domain.local;8.8.8.8;100.100.1.1;sentinel;s3nt1n3l;s3nt1n3l;public;private;telnetpass;10.0.0.5;10.0.01;10;data;20;voice;100;wifi
-Switch-e;domain.local;8.8.8.8;100.100.1.1;sentinel;s3nt1n3l;s3nt1n3l;public;private;telnetpass;10.0.0.6;10.0.01;10;data;20;voice;100;wifi
-Switch-f;domain.local;8.8.8.8;100.100.1.1;sentinel;s3nt1n3l;s3nt1n3l;public;private;telnetpass;10.0.0.7;10.0.01;10;data;20;voice;100;wifi
+hostname,domain_name,dns_server,ntp_server,admin_user,admin_password,enable,snmp_ro,snmp_rw,tty_password,management_ip,management_gw,vlanIdData,vlanNameData,vlanIdVoice,vlanNameVoice,vlanIdWireless,vlanNameWireless
+sw-1,domain.local,8.8.8.8,100.100.1.1,sentinel,s3nt1n3l,s3nt1n3l,public,private,telnetpass,10.0.0.2,10.0.01,10,data,20,voice,100,wifi
+sw-2,domain.local,8.8.8.8,100.100.1.1,sentinel,s3nt1n3l,s3nt1n3l,public,private,telnetpass,10.0.0.2,10.0.01,10,data,20,voice,100,wifi
+sw-3,domain.local,8.8.8.8,100.100.1.1,sentinel,s3nt1n3l,s3nt1n3l,public,private,telnetpass,10.0.0.2,10.0.01,10,data,20,voice,100,wifi
+sw-4,domain.local,8.8.8.8,100.100.1.1,sentinel,s3nt1n3l,s3nt1n3l,public,private,telnetpass,10.0.0.2,10.0.01,10,data,20,voice,100,wifi
+sw-5,domain.local,8.8.8.8,100.100.1.1,sentinel,s3nt1n3l,s3nt1n3l,public,private,telnetpass,10.0.0.2,10.0.01,10,data,20,voice,100,wifi
+sw-6,domain.local,8.8.8.8,100.100.1.1,sentinel,s3nt1n3l,s3nt1n3l,public,private,telnetpass,10.0.0.2,10.0.01,10,data,20,voice,100,wifi
+sw-7,domain.local,8.8.8.8,100.100.1.1,sentinel,s3nt1n3l,s3nt1n3l,public,private,telnetpass,10.0.0.2,10.0.01,10,data,20,voice,100,wifi
+sw-8,domain.local,8.8.8.8,100.100.1.1,sentinel,s3nt1n3l,s3nt1n3l,public,private,telnetpass,10.0.0.2,10.0.01,10,data,20,voice,100,wifi
+sw-9,domain.local,8.8.8.8,100.100.1.1,sentinel,s3nt1n3l,s3nt1n3l,public,private,telnetpass,10.0.0.2,10.0.01,10,data,20,voice,100,wifi
